@@ -1,0 +1,9 @@
+<div class="counter">
+	<figure class='gallery'>
+		{% for image in section.images %}
+		  	<a href="{{ image.full|media }}"><img src="{{ image.thumb|media }}" alt="{{ section.title }}"></a>
+		{% endfor %}
+	</figure>
+	<span class="number">{{ section.title|replace({ 'm2':'m<sup>2</sup>' })|raw }}</span>
+	{{section.subtitle|raw}}
+</div>

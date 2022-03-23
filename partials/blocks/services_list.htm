@@ -1,0 +1,28 @@
+<div class="icons-section">
+    {% if section.bg %}
+        <div class="service-hero">
+            <video muted loop autoplay preload>
+                <source src="{{ section.bg|media }}" type="video/mp4">
+            </video>
+        {% endif %}
+            <div class="grid-third points container ">
+                {% for point in section.punkt %}
+                {% set delay = loop.index * 1000 %}
+                    <div class="icon-box" data-aos="fade-in"
+                data-aos-delay="{{ delay }}"
+                data-aos-offset="-200"
+                data-aos-duration="1000"
+                data-aos-easing="ease"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="center-center">
+                        <figure><img src="{{ point.image|media }}" alt=""></figure>
+                        <h3>{{point.first_title}} <strong>{{point.second_title}}</strong></h3>
+                    </div>
+                {% endfor %}
+            </div>
+    {% if section.bg %}
+        </div>
+    {% endif %}
+</div>

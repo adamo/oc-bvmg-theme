@@ -1,0 +1,52 @@
+url = "/kontakt"
+layout = "default"
+title = "Kontakt"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+seoOptionsMetaTitle = "Agencja kreatywna | PR | BVMG| Public Relations| Eventy | Social Media"
+seoOptionsMetaDescription = "Poszukujesz agencji PR, kreatywnej lub interesują Cię inne działania zgodne z naszą działalnością? Zadzwoń lub napisz."
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+
+[emptyForm]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+mail_enabled = 1
+mail_subject = "Formularz ze strony BVMG"
+mail_recipients[] = "info@buenavistamediagroup.pl"
+mail_template = "martin.forms::mail.notification"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
+==
+{% put hero %}
+    <div class=" hero ">
+        {% partial 'page/title' %}
+    </div>
+{% endput%}
+<div class="contact-bg blue-matte">
+	<div class="container">
+		{% content 'kontakt/dane' %}
+	</div>
+</div>
+<section>
+	<div class="brand-title"><h1>{{'Dane rejestrowe'}}</h1></div>
+	<div class="container">
+		{% content 'kontakt/dane-rejestrowe' %}
+	</div>
+</section>
+
+<div class="section container">
+    <h2 class="page-title">{{"Napisz do nas"}}</h2>
+	{% content 'kontakt/lead' %}
+   	{% component 'emptyForm' %}
+</div>
+<div class="map section"></div>

@@ -1,0 +1,27 @@
+{{ form_ajax(__SELF__ ~ '::onFormSubmit') }}
+
+    <div id="{{ __SELF__ }}_forms_flash"></div>
+        <p class=form-group>
+            <label for="company-title">{{"Nazwa firmy"|_}}</label>
+            <input id="company-title" name='nazwa_firmy' type="text">
+         </p>
+        <p class=form-group>
+            <label for="nip">{{"NIP"|_}}</label>
+            <input id="nip" name='NIP' type="text">
+         </p>
+        <p class=form-group>
+            <label for="email">{{"E-mail"|_}}</label>
+            <input id="email" type="email" name='email'>
+        </p>
+        <p class="form-group">
+            <label for="message">{{"Wiadomość"|_}}</label>
+            <textarea id="message" rows="4" type="text" name='wiadomosc'></textarea>
+        </p>
+     <div class="form-group">
+        <label>{{"Załącz pliki"|_}}</label>
+        {% partial '@file-upload' %}
+    </div>
+
+    <input type="submit" value="{{"Wyślij zgłoszenie"|_}}" >
+
+{{ form_close() }}

@@ -1,0 +1,7 @@
+[localePicker]
+==
+<div class="language-switch">
+{% for code, name in locales %} {% if activeLocale != code %}
+	<span class="link"><a href="{{'/'|app}}{{ '/' ~ code  }}{{localeLinks[code]}}"><svg viewBox='0 0 17 17'><use xlink:href='#flag-{{code}}'></use></svg>{{ code }}</a></span>
+{% endif %}{% endfor %}
+</div>

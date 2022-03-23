@@ -1,0 +1,12 @@
+{% set posts = blogPosts.posts %}
+{% set firstPost = posts.first %}
+
+{% if posts %}
+	<div >
+		{% for post in posts %}
+    		{% partial 'blog/single-post-list' post=post %}
+		{% endfor %}
+	</div>
+{% else %}
+	<div class="no-data">{{ blogPosts.noPostsMessage }}</div>
+{% endif %}

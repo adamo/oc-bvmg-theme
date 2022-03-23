@@ -1,0 +1,6 @@
+{{ form_ajax(__SELF__ ~ '::onFormSubmit') }}
+    <div id="{{ __SELF__ }}_forms_flash"></div>
+
+    {% partial '@file-upload' %}
+    {{ form_submit() }}
+{{ form_close() }}

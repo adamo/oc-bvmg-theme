@@ -1,0 +1,18 @@
+[staticMenu]
+code = "gorne"
+
+[viewBag]
+
+==
+<button class='menu-toggle'><span class="screen__reader-text">menu</span><span class="lines"></span></button>
+<header class="site-header" id="masthead">
+	<div class="container inner">
+		<h1 class='logo'><a href="{{ url('/') }}"><svg class=logo width="186" height="92" viewBox="0 0 186 92"><use  xlink:href='#logo'></use></svg></a></h1>
+		<div class="toggable">
+			<nav class="main-navigation">
+				{% component 'staticMenu' %}
+				{% partial 'page/languages' %}
+			</nav>
+		</div>
+	</div>
+</header>{% partial 'contact/social' %}

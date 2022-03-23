@@ -1,0 +1,56 @@
+.site-header{
+
+    .inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .toggable{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        opacity: 0;
+        transition: opacity 300ms;
+        pointer-events: none;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        font-size: clamp(2rem,10vw,10rem);
+        padding-bottom: 4rem;
+        background-color: #0c3c60;
+
+        nav{
+            width: 50%;
+            margin-left: auto;margin-right: auto;
+        }
+
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        li {
+            border-bottom: 1px solid #fff;
+            padding: 5px;
+        }
+
+        a{
+            color: var(--white);
+            font-size: 0.9em;
+            font-weight:normal;
+        }
+
+    }
+
+    &.toggled{
+        .toggable{
+            opacity: 1;
+            pointer-events: all;
+            transition-delay: 300ms;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<div class="flex-half">
+    {% for block in section.block %}
+        <section class='full-background'>
+
+            {% if block.background %}
+                <img src="{{ block.background|media }}" alt="">
+            {% elseif block.video_background %}
+                <video mute autoplay loop>
+                    <source src="{{block.video_background|media}}" type='video/mp4'>
+                </video>
+            {% endif %}
+            <div class="content">
+                {% if block.left_content %}
+                    <h3>
+                        {% if block.url %}
+                            <a href="{{block.url}}">{{block.left_content}}</a>
+                        {% else %}
+                            {{block.left_content}}
+                        {% endif %}
+                    </h3>
+                {% endif %}
+            </div>
+        </section>
+    {% endfor %}
+</div>

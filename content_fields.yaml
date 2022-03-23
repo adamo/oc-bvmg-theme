@@ -1,0 +1,179 @@
+split_content:
+    name: treść z grafiką
+    description: dodaje treść z grafiką po jednej ze stron
+    icon: icon-th-large
+    fields:
+        contentOnRight:
+            label: treść po prawej?
+            type: checkbox
+            span: left
+        with_background:
+            label: Dodaj tło
+            type: checkbox
+            span: right
+        content:
+            label: treść
+            type: richeditor
+            span: left
+        source:
+            label: zdjęcie
+            type: mediafinder
+            mode: image
+            span: right
+
+how_it_works:
+    name: Jak to działa
+    description: dodaje sekcję jak to działa
+    icon: icon-th-large
+features:
+    name: Co zyskujesz
+    description: sekcja z ikonami i opisem
+    icon: icon-th-large
+reserve-form:
+    name: Formularz klient biznesowy
+    description: zapytanie o ofertę klient biznesowy
+    icon: icon-th-large
+    fields:
+        title:
+            type: textarea
+            label: Nagłówek
+            default: "Zarezerwuj swoje miejsce \ndo przechowywania już dziś"
+            size: tiny
+        content:
+            type: richeditor
+            label: Treść
+client-form:
+    name: Formularz klient indywidualny
+    description: zapytanie o ofertę klient indywidualny
+    icon: icon-th-large
+    fields:
+        title:
+            type: textarea
+            label: Nagłówek
+            default: "Zarezerwuj swoje miejsce \ndo przechowywania już dziś"
+            size: tiny
+        content:
+            type: richeditor
+            label: Treść
+pricing:
+    name: Cennik
+    description: cennik ze zdjęciami
+    icon: icon-money
+    fields:
+        price:
+            label: Cena od
+            type: text
+            span: left
+        space:
+            label: Powierzchnia w m2
+            type: text
+            span: right
+        images:
+            type: repeater
+            prompt: dodaj zdjęcia
+            form:
+                fields:
+                    thumb:
+                        label: Miniatura
+                        type: mediafinder
+                        mode: image
+                        span: left
+                    full:
+                        label: Duże zdjęcie
+                        type: mediafinder
+                        mode: image
+                        span: right
+
+section:
+    name: nowy rząd
+    description: możliwość dodania większej ilości
+    icon: icon-square-o
+    fields:
+        grid_type:
+            label: Ilość rzędów
+            type: dropdown
+            options:
+                flex-section: automatycznie
+                grid-half: dwa
+                grid-third: trzy
+        contentSection:
+            label: Sekcja z treścią
+            type: repeater
+            prompt: Dodaj zawartość
+            span: full
+            add_background:
+                type: checkbox
+                label: Dodaj tło do sekcji
+            groups:
+                text:
+                    icon: icon-file-text-o
+                    name: Edytor
+                    fields:
+                        content:
+                            type: richeditor
+                image:
+                    icon: icon-image
+                    name: zdjęcie
+                    fields:
+                        source:
+                            type: mediafinder
+                            mode: image
+                            span: left
+                        caption:
+                            type: text
+                            span: right
+                map:
+                    icon: icon-map
+                    name: Mapa
+                contact-form:
+                    icon: icon-paper-plane-o
+                    name: Formularz kontaktowy
+                contact-info:
+                    icon:
+                    name: informacje kontaktowe
+                    fields:
+                        content:
+                            type: richeditor
+                            label: treść
+
+                video:
+                    icon: icon-file-video-o
+                    name: film
+                    fields:
+                        title:
+                            type: text
+                            label: Tytuł
+                            span: left
+                        movie:
+                            type: mediafinder
+                            label: Wybierz/załaduj film
+                            span: right
+                gallery:
+                    icon: icon-file-image-o
+                    name: galeria
+                    fields:
+                        title:
+                            label: nazwa (wielkość)
+                            type: text
+                            span: left
+                        subtitle:
+                            label: podpis
+                            type: richeditor
+                            toolbarButtons: bold
+                            span: right
+                            size: tiny
+                        images:
+                            type: repeater
+                            prompt: dodaj zdjęcia
+                            form:
+                                fields:
+                                    thumb:
+                                        span: left
+                                        type: mediafinder
+                                        mode: image
+                                        label: miniatura
+                                    full:
+                                        span: right
+                                        type: mediafinder
+                                        mode: image
+                                        label: duże zdjęcie

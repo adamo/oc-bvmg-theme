@@ -1,0 +1,19 @@
+<div class="container section">
+    <div class="grid-third numbers points">
+        {% for number in section.number %}
+        {% set delay = loop.index * 1000 %}
+            <div class="number-box" data-aos="zoom-in"
+                data-aos-delay="{{ delay }}"
+                data-aos-offset="-200"
+                data-aos-duration="1000"
+                data-aos-easing="ease"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="center-center">
+                <div class="number"><span>{{number.single_number}}</span></div>
+                <p class='box-title'>{{number.first_title}} <span>{{number.second_title}}</span></p>
+            </div>
+        {% endfor %}
+    </div>
+</div>

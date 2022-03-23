@@ -1,0 +1,41 @@
+[staticMenu copyright]
+code = "copyright"
+
+[staticMenu kompetencje]
+code = "stopka-kompetencje"
+
+[staticMenu mapa]
+code = "stopka-mapa"
+
+[staticMenu portfolio]
+code = "stopka-portfolio"
+
+[staticMenu stopka]
+code = "stopka"
+
+
+==
+<footer class="site-footer container">
+
+
+    <div class="grid-four">
+        <nav class='muted-nav'>
+           {% component 'kompetencje' %}
+        </nav>
+        <nav class="muted-nav">
+           {% component 'portfolio' %}
+        </nav>
+        <nav class="muted-nav">
+           {% component 'stopka' %}
+        </nav>
+        <nav class="muted-nav last">
+           {% component 'mapa' %}
+        </nav>
+    </div>
+    <div class="copyright">
+        <p>&copy; {{ this.theme.copyright_text|_ }}</p>
+        <nav>
+           {% component 'copyright' %}
+        </nav>
+    </div>
+</footer>

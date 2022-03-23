@@ -1,0 +1,19 @@
+<div class="section {% if section.with_background %}with-background{% endif %}">
+	<div class="container grid-half">
+		{% if not section.contentOnRight == 1 %}
+			<div class="lead">
+				{{ section.content|raw }}
+		    </div>
+			<div class="content-right" style="text-align: center">
+				{% partial 'static-pages/image' section = section %}
+			</div>
+	  	{% else %}
+			<div class="content-right">
+				{{ section.content|raw }}
+		    </div>
+			<div class="content-left" style="text-align: center">
+				{% partial 'static-pages/image' section = section %}
+			</div>
+		{% endif %}
+	</div>
+</div>

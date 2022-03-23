@@ -1,0 +1,19 @@
+==
+function onEnd(){
+    $this->page['title'] = $this->page->components['PortfolioItem']->item->title;
+}
+==
+{% set item= __SELF__.item %}
+{% if item.cover %}
+    {% put hero %}
+    <div class="hero parallax-header">
+        {% partial 'page/title' %}
+        <div class="parallax-container">
+            <img src="{{ item.cover.getThumb(1920,9999)}}" alt="" class='parallax-header-image'>
+        </div>
+    </div>
+    {% endput%}
+{% endif %}
+{% for section in item.content %}
+    {% partial 'blocks/' ~ section._group section=section %}
+{% endfor %}

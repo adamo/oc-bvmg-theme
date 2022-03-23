@@ -1,0 +1,23 @@
+[seo]
+==
+<meta charset="utf-8">
+{# <title>{{ this.page.title }}</title>
+<meta name="description" content="{{ this.page.meta_description }}">
+<meta name="title" content="{{ this.page.meta_title }}"> #}
+<meta name="author" content="DEPCORE">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{ this.theme.head_meta|raw }}
+{{ this.theme.head_scripts|raw }}
+{% if this.theme.google_site_verification %}
+    <meta name="google-site-verification" content="{{ this.theme.google_site_verification }}" />
+{% endif %}
+<link href="{{ 'assets/css/main.min.css'|theme }}" rel="stylesheet">
+<meta name="theme-color" content="{{ this.theme.brand_color }}">
+<link rel="icon" href="{{ 'assets/images/icons/favicon.svg'|theme }}">
+<link rel="mask-icon" href="{{ 'assets/images/icons/mask-icon.svg'|theme }}" color="{{ this.theme.brand_color }}">
+<link rel="apple-touch-icon" href="{{ 'assets/images/icons/apple-touch-icon.png'|theme }}">
+<link rel="manifest" href="{{ 'assets/images/icons/manifest.json'|theme }}">
+<meta name="msapplication-TileColor" content="{{ this.theme.brand_color }}">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+{% styles %}
+{% component 'seo' %}

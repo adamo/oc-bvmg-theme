@@ -1,0 +1,22 @@
+url = "/usluga/:slug"
+layout = "default"
+title = "Usługa"
+is_hidden = 0
+seoOptionsMetaTitle = "{{service.seo_options.meta_title ?: service.name}}"
+seoOptionsMetaDescription = "{{service.seo_options.meta_description}}"
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+
+[ServiceContent]
+
+[serviceNavigation]
+
+[viewBag]
+localeTitle[en] = "services"
+localeUrl[en] = "/service/:slug"
+==
+{% component 'ServiceContent' %}
+{% partial 'buttons/return' link='kompetencje'|page title='kompetencje'|_ %}

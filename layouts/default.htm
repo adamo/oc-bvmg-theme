@@ -1,0 +1,30 @@
+description = "Default layout"
+
+[staticPage]
+useContent = 1
+default = 1
+
+==
+{variable name="hero_title" label="Tytuł strony jeśli inny niż domyślnie" type="text" tab="Nagłówek"}{/variable}
+{variable name="hero_image" label="Zdjęcie nagłówkowe" type="mediafinder" mode="image" tab="Nagłówek"}{/variable}
+{variable name="hero_video" label="Video w nagłówku" type="mediafinder" mode="file" tab="Nagłówek"}{/variable}
+{variable name="hero_slider" label="Treści slidera" type="richeditor" toolbarButtons='bold' comment='Po jednej linijce na slider' tab="Nagłówek"}{/variable}
+{variable name="content" type="repeater" prompt="Dodaj nową sekcję" tab="Bloki"  groups="~/themes/depcore-theme/content_fields.yaml"}{/variable}
+<!DOCTYPE html>
+<html lang='pl-PL'>
+    <head>
+    {% partial 'meta/head'  %}
+    </head>
+    <body class='home {% if this.page.apiBag.staticPage or staticPageLayout %} static-page{% endif %} {{ this.page.id}}' >
+        {% partial 'page/loader' %}
+        {% partial 'assets/icons' %}
+        {% partial 'page/header' %}
+        {% partial 'page/hero'  %}
+        <main id='page' class='page-content transition-fade '>
+            {% page %}
+        </main>
+        {% partial 'page/footer' %}
+        <script src="{{ ['assets/js/main.min.js']|theme }}"></script>
+        {% partial 'page/analytics' %}
+    </body>
+</html>

@@ -1,0 +1,8 @@
+<div class="section">
+	<div class="container {{ section.grid_type }}">
+		{% for s in section.contentSection %}
+			{% set staticPageSection = 'static-pages/' ~ s._group %}
+			{% partial staticPageSection section = s %}
+		{% endfor %}
+	</div>
+</div>

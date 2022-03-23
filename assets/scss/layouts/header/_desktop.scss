@@ -1,0 +1,32 @@
+.site-header {
+    .inner{
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .menu-in,.menu-out{
+        display: none;
+    }
+    .logo{
+        grid-row: 1/ span 2;
+    }
+
+    .contact{
+        justify-self: flex-end;
+        display: flex;
+
+        > * {
+            margin-left: 1rem;
+        }
+    }
+
+    .toggable{
+        margin-top: 30px;
+
+    }
+    .main-navigation{
+        display: flex;
+    }
+
+}

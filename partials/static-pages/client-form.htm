@@ -1,0 +1,5 @@
+<div class="section container">
+	<h3>{{ section.title|replace({"\n":"<br>"})|raw }}</h3>
+	{{ section.content|raw}}
+	{% component 'clientForm' %}
+</div>

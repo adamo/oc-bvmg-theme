@@ -1,0 +1,8 @@
+<div class="lead">
+	{{ section.content|raw }}
+	<ul class="contact-info">
+		<li><strong>Zadzwoń:</strong>{% partial 'contact/phone'  %}</li>
+		<li><strong>Napisz:</strong>{% partial 'contact/email'  %}</li>
+		<li>{% partial 'contact/social'  %}</li>
+	</ul>
+</div>

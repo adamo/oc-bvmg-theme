@@ -1,0 +1,15 @@
+description = "error pages"
+
+[staticPage]
+useContent = 1
+default = 1
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        {% partial 'meta/head'  %}
+    </head>
+    <body class='error-page' >
+        {% page %}
+    </body>
+</html>

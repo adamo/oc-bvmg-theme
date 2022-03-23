@@ -1,0 +1,10 @@
+<div class="blue-background">
+    <div class="container">{{ section.description|raw }}</div>
+</div>
+<div class="gallery grid-four container">
+    {% for image in section.images %}
+
+        <a href="{{ image.image|media }}"><img src="{{image.thumb|media }}" alt=""></a>
+
+    {% endfor %}
+</div>

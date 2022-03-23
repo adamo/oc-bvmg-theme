@@ -1,0 +1,26 @@
+url = "/portfolio"
+layout = "default"
+title = "Portfolio"
+is_hidden = 0
+meta_description = "Przedstawiamy część naszych realizacji, takich jak:  działania public relations, social media marketing."
+seoOptionsMetaDescription = "Przedstawiamy część naszych realizacji, takich jak:  działania public relations, social media marketing."
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+
+[PortfolioList]
+url = "portfolio/case"
+slug = ":slug"
+categoryUrl = "portfolio/case"
+categorySlug = ":slug"
+==
+{% put hero %}
+<div class="hero">
+    {% partial 'page/title' %}
+</div>
+{% endput%}
+<div class="section">
+   {% component 'PortfolioList' %}
+</div>

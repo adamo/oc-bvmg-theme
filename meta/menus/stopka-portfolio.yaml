@@ -1,0 +1,110 @@
+items:
+    -
+        title: 'Zaufali nam'
+        nesting: null
+        type: header
+        url: null
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'PR dla branży budowlanej'
+        type: url
+        url: 'https://buenavistamediagroup.pl/klienci/budownictwo-i-architektura'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'PR dla branży wnętrzarskiej'
+        type: url
+        url: 'https://buenavistamediagroup.pl/klienci/wnetrza'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'PR dla branży przemysłowej'
+        type: url
+        url: 'https://buenavistamediagroup.pl/klienci/przemysl'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'PR dla branży FMCG'
+        type: url
+        url: 'https://buenavistamediagroup.pl/klienci/fmcg-i-kulinaria'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'PR dla branży kulinarnej'
+        type: url
+        url: 'https://buenavistamediagroup.pl/klienci/fmcg-i-kulinaria'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'PR dla branży motoryzacyjnej'
+        type: url
+        url: 'https://buenavistamediagroup.pl/klienci/motoryzacja'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'PR dla branży IT'
+        type: url
+        url: 'https://buenavistamediagroup.pl/klienci/it'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: stopka-portfolio

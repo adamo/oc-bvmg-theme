@@ -1,0 +1,110 @@
+items:
+    -
+        title: 'Mapa strony'
+        nesting: null
+        type: header
+        url: null
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'O nas'
+        type: url
+        url: 'https://buenavistamediagroup.pl/o-nas'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: 'About Us'
+                    url: 'https://buenavistamediagroup.pl/en/about-us'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Portfolio
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/portfolio'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: Portfolio
+                    url: 'https://buenavistamediagroup.pl/en/portfolio'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kompetencje
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/kompetencje'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: Competences
+                    url: 'https://buenavistamediagroup.pl/en/kompetencje'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Blog
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/blog'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: Blog
+                    url: 'https://buenavistamediagroup.pl/en/blog'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Klienci
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/klienci'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kariera
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/kariera'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kontakt
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/kontakt'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: Contact
+                    url: 'https://buenavistamediagroup.pl/en/kontakt'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'stopka mapa'

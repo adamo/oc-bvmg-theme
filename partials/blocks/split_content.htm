@@ -1,0 +1,9 @@
+<div class="flex-half {% if section.background_color %}blue{% endif %}
+">
+    <div class="image" style='background-image: url({{section.image|media}});'>
+            {# <img src="{{section.image|media}}" alt="" class='parallax-image'> #}
+        {# <div class="parallax-container">
+        </div> #}
+    </div>
+    <div class="content"><article>{{section.content|raw}}</article></div>
+</div>

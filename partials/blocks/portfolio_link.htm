@@ -1,0 +1,8 @@
+{% if section.link_text %}
+<div class="flex-half service-portfolio-link">
+    <div class="content"><article><h4>{{ section.title }}</h4><h3><a href="{{ section.portfolio_id }}">{{section.link_text}}</a></h3></article></div>
+    {% if section.left %}
+        <div class="content contact-link"><article>{{section.left|raw}}</article></div>
+    {% endif %}
+</div>
+{% endif %}

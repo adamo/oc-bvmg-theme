@@ -1,0 +1,17 @@
+items:
+    -
+        title: 'Polityka prywatności'
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: polityka-prywatnosci
+        replace: 0
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: copyright

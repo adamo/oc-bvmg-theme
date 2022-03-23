@@ -1,0 +1,4 @@
+{% for section in content %}
+	{% set staticPageSection = 'static-pages/' ~ section._group %}
+  	{% partial staticPageSection section=section %}
+{% endfor %}

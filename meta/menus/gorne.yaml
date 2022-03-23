@@ -1,0 +1,117 @@
+items:
+    -
+        title: 'O nas'
+        nesting: 0
+        type: cms-page
+        url: null
+        code: ''
+        reference: o-nas
+        cmsPage: null
+        replace: 0
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Portfolio
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: portfolio
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kompetencje
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: kompetencje
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Blog
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: blog
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Klienci
+        type: cms-page
+        code: ''
+        reference: klienci
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kariera
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: kariera
+        cmsPage: null
+        replace: 0
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kontakt
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: kontakt
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                en:
+                    title: ''
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: górne

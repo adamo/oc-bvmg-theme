@@ -1,0 +1,19 @@
+url = "/wpis/:slug"
+layout = "default"
+title = "Blog"
+is_hidden = 0
+seoOptionsMetaTitle = "{{ post.seo_options.meta_title ?: post.title }}"
+seoOptionsMetaDescription = "{{ post.seo_options.meta_description ?: post.short_description}}"
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "kategoria"
+==
+<div class="blog">
+    {% component 'blogPost' %}
+</div>

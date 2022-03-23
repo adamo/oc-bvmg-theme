@@ -1,0 +1,41 @@
+<form data-request="{{ __SELF__ }}::onFormSubmit">
+        {{ form_token()}}
+        <div id="{{ __SELF__ }}_forms_flash"></div>
+
+		<div class="fieldset">
+			<p><label for="imie">{{'Imię'|_}}</label><input type="text" name="imie" id="imie" required></p>
+			<p><label for="email">Email</label><input type="email" name="email" id="email" required></p>
+			<p><label for="topic">{{'Temat'|_}}</label>
+				<select name="temat" id="topic" required>
+					<option value="zapytanie">{{'Zapytanie'|_}}</option>
+					<option value="inne">{{'Inne'|_}}</option>
+					<option value="oferta">{{'Oferta'|_}}</option>
+					<option value="wspolpraca">{{'Współpraca'|_}}</option>
+				</select>
+			</p>
+			<p><label for="telefon">{{'Telefon'|_}}</label><input type="text" name="telefon" id="telefon" required></p>
+		</div>
+
+		<div class="fieldset">
+			<p><label for="wiadomosc">{{"Wiadomość"|_}}</label><textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10" required></textarea></p>
+		</div>
+		<div class="fieldset checkbox">
+			<p>
+				<input type="checkbox" name='rodo' id='rodo' required>
+				<label for="rodo">{% content 'kontakt/rodo' %}</label>
+			</p>
+			<p>
+				<input type="checkbox" name='newsletter' id='newsletter'>
+				<label for="newsletter">{% content 'kontakt/newsletter' %}</label>
+			</p>
+			<p>
+				<input type="checkbox" name='sms' id='sms'>
+				<label for="sms">{% content 'kontakt/sms' %}</label>
+			</p>
+			<p>
+				<a href="{{'polityka-prywatnosci'|staticPage}}">{{'Tutaj'|_}}</a> {{"możesz zapoznać się z naszą polityką prywatności"|_}}
+			</p>
+		</div>
+		<div class="submit"><button type="submit">{{'wyślij'|_}}</button></div>
+        {% partial '@recaptcha' %}
+	</form>

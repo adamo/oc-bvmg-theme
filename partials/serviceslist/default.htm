@@ -1,0 +1,7 @@
+<div class="services-list grid-third">
+	{% for service in __SELF__.services %}
+		<div class="single-service">
+			{% partial 'ServicesList::single-service' service = service %}
+		</div>
+	{% endfor %}
+</div>

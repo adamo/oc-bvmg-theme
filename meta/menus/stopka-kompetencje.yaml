@@ -1,0 +1,123 @@
+items:
+    -
+        title: Kompetencje
+        nesting: null
+        type: header
+        url: null
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            locale:
+                en:
+                    title: Competences
+                    url: ''
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Media relations'
+        type: url
+        url: 'https://buenavistamediagroup.pl/usluga/media-relations'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: 'Media relations'
+                    url: 'https://buenavistamediagroup.pl/en/service/media-relations'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Social media marketing'
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/usluga/social-media-marketing'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: 'Social media marketing'
+                    url: 'https://buenavistamediagroup.pl/en/service/social-media-marketing'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Influencer marketing'
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/usluga/influencer-marketing'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: 'Influencer marketing'
+                    url: 'https://buenavistamediagroup.pl/en/service/influencer-marketing'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Event marketing'
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/usluga/event-marketing'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: 'Event marketing'
+                    url: 'https://buenavistamediagroup.pl/en/service/event-marketing'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: DTP
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/usluga/dtp'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: DTP
+                    url: 'https://buenavistamediagroup.pl/en/service/dtp'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Foto & Video'
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/usluga/foto-video'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: 'Foto & Video'
+                    url: 'https://buenavistamediagroup.pl/en/service/foto-video'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Wsparcie logistyczne'
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/usluga/wsparcie-logistyczne'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: 'Logistical support'
+                    url: 'https://buenavistamediagroup.pl/en/service/logistical-support'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Komunikacja kryzysowa'
+        type: url
+        url: 'https://buenavistamediagroup.pl/pl/usluga/komunikacja-kryzysowa'
+        code: ''
+        viewBag:
+            locale:
+                en:
+                    title: 'Crisis communication'
+                    url: 'https://buenavistamediagroup.pl/service/crisis-communication'
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'stopka kompetencje'

@@ -1,0 +1,23 @@
+url = "/case/:slug"
+layout = "default"
+title = "Portfolio"
+is_hidden = 0
+meta_title = "Agencja Kreatywna | BVMG | Public Relations | Wrocław"
+meta_description = "Przedstawiamy część naszych realizacji, takich jak:  działania public relations, social media marketing."
+seoOptionsMetaTitle = "{{portfolio.seo_options.meta_title ?: portfolio.title}}"
+seoOptionsMetaDescription = "{{portfolio.seo_options.meta_description ?: portfolio.title}}"
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+
+[PortfolioItem]
+
+[PortfolioNavigation]
+
+[viewBag]
+localeTitle[en] = "portfolio"
+localeUrl[en] = "/portfolio-item/:slug"
+==
+{% component 'PortfolioItem' %}

@@ -24,7 +24,8 @@ default = 1
             {% page %}
         </main>
         {% partial 'page/footer' %}
-        <script src="{{ ['assets/js/main.min.js']|theme }}"></script>
+        <script src="{{ ['assets/src/main.js']|theme }}"></script>
+        <link rel="stylesheet" href="{{ ['assets/scss/main.scss']|theme }}">
         {% partial 'page/analytics' %}
     </body>
 </html>

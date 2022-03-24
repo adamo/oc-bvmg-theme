@@ -2,8 +2,8 @@
         {{ form_token()}}
         <div id="{{ __SELF__ }}_forms_flash"></div>
 
-		<div class="fieldset">
-			<p><label for="imie">{{'Imię'|_}}</label><input type="text" name="imie" id="imie" required></p>
+		<div class="fieldset input">
+			<p class="name" ><label for="imie">{{'Imię'|_}}</label><input type="text" name="imie" id="imie" required></p>
 			<p><label for="email">Email</label><input type="email" name="email" id="email" required></p>
 			<p><label for="topic">{{'Temat'|_}}</label>
 				<select name="temat" id="topic" required>
@@ -16,7 +16,7 @@
 			<p><label for="telefon">{{'Telefon'|_}}</label><input type="text" name="telefon" id="telefon" required></p>
 		</div>
 
-		<div class="fieldset">
+		<div class="fieldset input">
 			<p><label for="wiadomosc">{{"Wiadomość"|_}}</label><textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10" required></textarea></p>
 		</div>
 		<div class="fieldset checkbox">

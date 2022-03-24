@@ -1,46 +1,49 @@
 .site-footer {
-	margin-top: var(--spacing);
-	color: var(--footer-text-color);
-	padding-bottom: 40px;
+  margin-top: var(--spacing);
+  color: var(--footer-text-color);
+  padding-bottom: 40px;
+
+  .last {
+    text-align: right;
+  }
 }
 
-.copyright{
-	color: var(--brand-gray);
-	display: flex;
-	justify-content: space-between;
-	gap: 2rem;
-	align-items: center;
-	margin-top: var(--spacing);
+.copyright {
+  color: var(--brand-gray);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  margin-top: var(--spacing);
 }
 
 .designer {
-	text-align: center;
-	padding-top: var(--size-padding);
-	margin-bottom: var(--size-padding);
-	margin-top: var(--size-padding);
+  text-align: center;
+  padding-top: var(--size-padding);
+  margin-bottom: var(--size-padding);
+  margin-top: var(--size-padding);
 
-	svg {
-		height: 10px;
-		width: auto;
-	}
+  svg {
+    height: 10px;
+    width: auto;
+  }
 }
 
-.contact-info{
-	a{
-		display: block;
-	}
-
+.contact-info {
+  a {
+    display: block;
+  }
 }
 
-.contact-list{
-	display: flex;
+.contact-list {
+  display: flex;
 
-	& + .contact-list{
-		margin-top: 2rem;
-	}
+  & + .contact-list {
+    margin-top: 2rem;
+  }
 
-	svg{
-		width: 30px;
-		margin-right: 20px;
-	}
+  svg {
+    width: 30px;
+    margin-right: 20px;
+  }
 }

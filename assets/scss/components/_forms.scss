@@ -1,63 +1,87 @@
 @import "forms/fields";
 @import "forms/buttons";
 
+form {
+  max-width: 45rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 17px -10px rgba(66, 68, 90, 1);
+
+  .name {
+    padding-top: 30px;
+  }
+
+  p {
+    margin: 35px;
+    font-size: 1rem;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .submit {
+    padding: 0 35px 35px;
+  }
+}
+
 .contact-form {
-    padding: calc(var(--spacing) / 2);
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
-    margin-left: $size__spacing;
-    margin-right: $size__spacing;
-    position: relative;
-    z-index: 2;
+  padding: calc(var(--spacing) / 2);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+  margin-left: $size__spacing;
+  margin-right: $size__spacing;
+  position: relative;
+  z-index: 2;
 }
 
 .inline-fields {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 54em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 54em;
 }
 
 form {
-    .group {
-        margin-bottom: $size__padding-default;
-    }
+  .group {
+    margin-bottom: $size__padding-default;
+  }
 }
 
 .alert {
-    @extend %box-base;
-    padding: 1rem;
-    margin-bottom: calc(var(--spacing) / 2);
+  @extend %box-base;
+  padding: 1rem;
+  margin-bottom: calc(var(--spacing) / 2);
 
-    &.alert-success {
-        background-color: $color__brand-primary;
-        color: $color__brand-white;
-    }
+  &.alert-success {
+    background-color: $color__brand-primary;
+    color: $color__brand-white;
+  }
 
-    p {
-        margin: 0;
-        text-align: center;
-    }
+  p {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .privacy-policy {
-    display: flex;
+  display: flex;
 
-    p {
-        margin: 0;
-        margin-left: 1rem;
-        font-size: 0.8rem;
-        margin-top: -5px;
-    }
+  p {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    margin-top: -5px;
+  }
 }
 
 .wpcf7-not-valid-tip {
-    font-weight: normal;
-    text-transform: none;
-    display: block;
-    font-size: 0.8em;
-    margin-top: 0.5em;
+  font-weight: normal;
+  text-transform: none;
+  display: block;
+  font-size: 0.8em;
+  margin-top: 0.5em;
 }
 
 fieldset {
-    border: 0;
+  border: 0;
 }

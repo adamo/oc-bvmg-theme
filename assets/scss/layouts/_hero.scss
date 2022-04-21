@@ -1,136 +1,137 @@
 .hero {
-    position: relative;
-    overflow: hidden;
-    @media (max-width: $size-mobile) {
-        margin-top: 0 !important;
-    }
-    video {
-        aspect-ratio: 3/1;
-        width: 100%;
-        object-fit: cover;
-    }
+  position: relative;
+  overflow: hidden;
+  @media (max-width: $size-mobile) {
+    margin-top: 0 !important;
+  }
+  video {
+    aspect-ratio: 3/1;
+    width: 100%;
+    object-fit: cover;
+  }
 
-    .tns-outer {
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        height: 100%;
-        display: grid;
-        place-items: center;
-        justify-content: center;
-        text-align: center;
+  .tns-outer {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text-slider {
+    color: var(--white);
+
+    p {
+      font-size: var(--font-size-lg);
+
+      strong {
+        display: block;
+      }
     }
-
-    .text-slider {
-        color: var(--white);
-
-        p {
-            font-size: var(--font-size-lg);
-
-            strong {
-                display: block;
-            }
-        }
-    }
+  }
 }
 
 .parallax-header,
 .blog-header,
 .video-hero,
 .service-hero {
-    min-height: 200px;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: var(--size-padding) 0;
+  --title-color: var(--white);
+
+  video,
+  .parallax-container {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    height: 100%;
+
+    @media (max-width: 530px) {
+      & img {
+        transform: translate3d(0px, 0px, 0px) !important;
+      }
+    }
+  }
+
+  .container {
     position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    padding: var(--size-padding) 0;
-    --title-color: var(--white);
+  }
+  .page-title {
+    color: var(--white);
 
-    video,
-    .parallax-container {
-        position: absolute;
-        width: 100%;
-        z-index: -1;
-        object-fit: cover;
-        height: 100%;
+    &:before {
+      display: none;
+    }
+  }
 
-        @media (max-width: 530px) {
-            & img {
-                transform: translate3d(0px, 0px, 0px) !important;
-            }
-        }
-    }
-
-    .container {
-        position: relative;
-    }
-    .page-title {
-        color: var(--white);
-
-        &:before {
-            display: none;
-        }
-    }
-
-    &::before,
-    &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        // z-index: 2;
-    }
-    &::before {
-        background-color: rgba(var(--brand-primary-rgba), 0.5);
-    }
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // z-index: 2;
+  }
+  &::before {
+    background-color: rgba(var(--brand-primary-rgba), 0.5);
+  }
 }
 
 .parallax-header,
 .blog-header {
-    margin-bottom: var(--spacing);
+  margin-bottom: var(--spacing);
 
-    @media (max-width: 780px) {
-        min-height: 200px;
-    }
+  @media (max-width: 780px) {
+    min-height: 200px;
+  }
 }
 
 .parallax-header {
-    &:before {
-        background-color: rgba(0, 159, 227, 0.6);
-    }
+  margin-bottom: 0;
+  &:before {
+    background-color: rgba(0, 159, 227, 0.6);
+  }
 }
 
 .blog-header {
-    min-height: 346px;
+  min-height: 346px;
 
-    &:before {
-        background-color: rgba(110, 164, 202, 0.6);
-    }
+  &:before {
+    background-color: rgba(110, 164, 202, 0.6);
+  }
 }
 
 .video-hero,
 .service-hero {
-    &:before {
-        background-color: rgba(110, 164, 202, 0.6);
-    }
+  &:before {
+    background-color: rgba(110, 164, 202, 0.6);
+  }
 
-    &::after {
-        border-top: 2px solid #fff;
-        border-bottom: 2px solid #fff;
-        top: 2px;
-        bottom: 2px;
-    }
+  &::after {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 2px;
+    bottom: 2px;
+  }
 }
 
 .video-hero {
-    @media screen and (min-width: $size-mobile) {
-        min-height: 650px;
-    }
+  @media screen and (min-width: $size-mobile) {
+    min-height: 650px;
+  }
 }
 
 .service-hero {
-    min-height: 450px;
+  min-height: 450px;
 }

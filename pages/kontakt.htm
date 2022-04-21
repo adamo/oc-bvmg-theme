@@ -13,8 +13,8 @@ seoOptionsRobotFollow = "follow"
 seoOptionsOgCard = "summary-large-image"
 
 [emptyForm]
-messages_success = "Your form was successfully submitted"
-messages_errors = "There were errors with your submission"
+messages_success = {{"Your form was successfully submitted"|_}}
+messages_errors = {{"There were errors with your submission"|_}}
 mail_enabled = 1
 mail_subject = "Formularz ze strony BVMG"
 mail_recipients[] = "info@buenavistamediagroup.pl"
@@ -38,14 +38,14 @@ emails_date_format = "Y-m-d"
 	</div>
 </div>
 <section>
-	<div class="brand-title"><h1>{{'Dane rejestrowe'}}</h1></div>
+	<div class="brand-title" style='margin-top: 0;'	><h1>{{'Dane rejestrowe'|_}}</h1></div>
 	<div class="container">
 		{% content 'kontakt/dane-rejestrowe' %}
 	</div>
 </section>
 
 <div class="section container">
-    <h2 class="page-title">{{"Napisz do nas"}}</h2>
+    <h2 class="page-title">{{"Napisz do nas"|_}}</h2>
 	{% content 'kontakt/lead' %}
    	{% component 'emptyForm' %}
 </div>

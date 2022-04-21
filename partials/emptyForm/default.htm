@@ -3,9 +3,16 @@
         <div id="{{ __SELF__ }}_forms_flash"></div>
 
 		<div class="fieldset input">
-			<p class="name" ><label for="imie">{{'Imię'|_}}</label><input type="text" name="imie" id="imie" required></p>
-			<p><label for="email">Email</label><input type="email" name="email" id="email" required></p>
-			<p><label for="topic">{{'Temat'|_}}</label>
+			<p class="name" >
+				<label for="imie">{{'Imię'|_}}<sup>*</sup></label>
+				<span class="grid-half">
+					<input type="text" name="imie" id="imie" required placeholder="{{'Imię'|_}}">
+					<input type="text" name="nazwisko" id="surname" required placeholder="{{'Nazwisko'|_}}">
+				</span>
+			</p>
+			<p><label for="email">Email<sup>*</sup></label><input type="email" name="email" id="email" required></p>
+			<p><label for="telefon">{{'Telefon'|_}}</label><input type="text" name="telefon" id="telefon" required placeholder='### ### ###'></p>
+			<p><label for="topic">{{'Temat'|_}}<sup>*</sup></label>
 				<select name="temat" id="topic" required>
 					<option value="zapytanie">{{'Zapytanie'|_}}</option>
 					<option value="inne">{{'Inne'|_}}</option>
@@ -13,11 +20,10 @@
 					<option value="wspolpraca">{{'Współpraca'|_}}</option>
 				</select>
 			</p>
-			<p><label for="telefon">{{'Telefon'|_}}</label><input type="text" name="telefon" id="telefon" required></p>
 		</div>
 
 		<div class="fieldset input">
-			<p><label for="wiadomosc">{{"Wiadomość"|_}}</label><textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10" required></textarea></p>
+			<p><label for="wiadomosc">{{"Wiadomość"|_}}<sup>*</sup></label><textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10" required></textarea></p>
 		</div>
 		<div class="fieldset checkbox">
 			<p>

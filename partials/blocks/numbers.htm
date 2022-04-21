@@ -12,13 +12,7 @@
                 data-aos-once="false"
                 data-aos-anchor-placement="center-center">
                 <div class="number">
-                    {% if number.font_size == "small" %}
-                        <span style="font-size: 1rem">{{ number.single_number | number_format(0, "", " ") }}</span>
-                    {% elseif number.font_size == "huge" %}
-                        <span style="font-size: 3.3rem">{{ number.single_number | number_format(0, "", " ") }}</span>
-                    {% else %}
-                        <span>{{ number.single_number | number_format(0, "", " ") }}</span>
-                    {% endif %}
+                    <span style="font-size: {{ number.font_size }}em">{{ number.single_number | number_format(0, "", " ") }}</span>
                 </div>
                 <p class='box-title'>{{number.first_title}}<span>{{number.second_title}}</span></p>
             </div>

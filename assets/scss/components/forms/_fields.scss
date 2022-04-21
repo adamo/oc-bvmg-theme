@@ -1,56 +1,64 @@
 label {
-    font-weight: bold;
-    margin-right: 10px;
-    display: block;
-    margin-bottom: 0.3em;
+  font-weight: bold;
+  margin-right: 10px;
+  display: block;
+  margin-bottom: 0.3em;
+  font-size: 1rem;
+  color: var(--brand-dark-gray);
 
-    &.legal {
-        line-height: 1.5;
-        text-transform: none;
-        font-size: 0.58rem;
-        font-weight: normal;
-        display: inline-block;
-        color: var(--brand-gray);
+  &.legal {
+    line-height: 1.5;
+    text-transform: none;
+    font-size: 0.58rem;
+    font-weight: normal;
+    display: inline-block;
+    color: var(--brand-gray);
 
-        a {
-            font-size: inherit;
-            font-weight: bold;
-        }
+    a {
+      font-size: inherit;
+      font-weight: bold;
     }
+  }
+
+  sup {
+    color: red;
+  }
 }
 
 input {
-    &[type="text"],
-    &[type="password"],
-    &[type="phone"],
-    &[type="url"],
-    &[type="date"],
-    &[type="email"] {
-        @extend %input;
-    }
-}
-select {
+  &[type="text"],
+  &[type="password"],
+  &[type="phone"],
+  &[type="url"],
+  &[type="date"],
+  &[type="email"] {
     @extend %input;
+  }
+}
+select,
+option {
+  @extend %input;
 }
 
 textarea {
-    @extend %input;
-    width: 80%;
+  @extend %input;
+  width: 100%;
+  min-height: 100px;
 }
 
 .fieldset.inline {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 54em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 54em;
 
-    p + p {
-        margin-left: 2rem;
-    }
+  p + p {
+    margin-left: 2rem;
+  }
 }
 
 .custom-form-input {
-    margin-top: 0.85rem;
+  margin-top: 0.85rem;
 }
 
 // .inline-fields {
@@ -70,46 +78,46 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-    position: absolute;
-    z-index: 0;
-    transform: scale(0);
-    display: block;
+  position: absolute;
+  z-index: 0;
+  transform: scale(0);
+  display: block;
 
-    & + label {
-        padding-left: 30px;
-        font-weight: normal;
-        font-size: 0.7em;
+  & + label {
+    padding-left: 30px;
+    font-weight: normal;
+    font-size: 0.8em;
 
-        @include before-content;
+    @include before-content;
 
-        &:before {
-            position: absolute;
-            left: 0;
-            background-color: #fff;
-            display: inline-block;
-            top: 0;
-        }
-
-        &:before {
-            width: 30px;
-            height: 30px;
-            left: 0;
-        }
-
-        &:before {
-            border-radius: 2px;
-            border: 1px solid $color__brand-primary;
-            height: 15px;
-            width: 15px;
-            transition: background-color 300ms ease;
-        }
+    &:before {
+      position: absolute;
+      left: 0;
+      background-color: #fff;
+      display: inline-block;
+      top: 0;
     }
 
-    &:checked + label:before {
-        background-color: $color__brand-secondary;
+    &:before {
+      width: 30px;
+      height: 30px;
+      left: 0;
     }
+
+    &:before {
+      border-radius: 2px;
+      border: 1px solid $color__brand-primary;
+      height: 15px;
+      width: 15px;
+      transition: background-color 300ms ease;
+    }
+  }
+
+  &:checked + label:before {
+    background-color: $color__brand-secondary;
+  }
 }
 
 input[type="radio"] + label:before {
-    border-radius: 50%;
+  border-radius: 50%;
 }
